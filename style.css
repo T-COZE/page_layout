@@ -1,5 +1,5 @@
 /* -------  General Styles ------- */
-
+@media all and (max-width: 479px){
 body {
   font-family: "Lato", sans-serif;
 }
@@ -60,12 +60,19 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 60px;
   color: #fff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  
 }
 
 header nav ul li {
   list-style-type: none;
+ 
 }
 
 header nav ul li a {
@@ -81,8 +88,22 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
+  display: flex;
   border: 2px solid #ff385c;
   padding: 10px;
+  
+}
+.form-params {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.params{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 form label {
@@ -103,7 +124,26 @@ form button {
   padding: 15px;
   width: 100%;
 }
+#about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.about img{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
 
+#host{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div img{
+  width: 100%;
+}
 /* -------  Footer ------- */
 
 footer {
@@ -115,5 +155,7 @@ footer p {
   text-align: center;
   padding: 20px;
 }
+}
+
 
 /* -------  Media Query ------- */
