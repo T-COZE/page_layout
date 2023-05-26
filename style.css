@@ -186,10 +186,29 @@ footer p {
   /* --about-- */
   .inline{
     display:flex;
+    align-items: center;
+    justify-content;
+}
+.inline div{
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  margin: 5px
+  
+}
+
 }
  #about img{
-  width: 25%;
-  margin-right: 10px;
+width:50%;
+margin:5px;
+
+}
+
+.inline p{
+  flex:1;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
 }
 /* ---ideas--- */
 .row{
@@ -198,7 +217,7 @@ footer p {
 }
 .resize {
   width: 50%;
-}
+
 /* host */
 #host{
   display:flex;
