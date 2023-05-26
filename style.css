@@ -197,7 +197,7 @@ footer p {
   
 }
 
-}
+
  #about img{
 width:50%;
 margin:5px;
@@ -217,15 +217,24 @@ margin:5px;
 }
 .resize {
   width: 50%;
-
-/* host */
-#host{
-  display:flex;
 }
-#host div{
-  width: 50%;
+#host{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text{
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.img{
+  display: flex;
+  width: 50%;
+  
 }
 }
 @media all and (max-width:349px){
