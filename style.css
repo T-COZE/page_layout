@@ -1,5 +1,5 @@
 /* -------  General Styles ------- */
-@media all and (max-width: 479px){
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -53,26 +53,25 @@ main img {
 /* -------  Navigation ------- */
 
 header {
+  display: flex;
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 60px;
+  font-size: 72px;
   color: #fff;
 }
-
-nav ul {
+#menu{
   display: flex;
-  justify-content: center;
   
 }
-
 header nav ul li {
   list-style-type: none;
- 
 }
 
 header nav ul li a {
@@ -88,24 +87,14 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  display: flex;
   border: 2px solid #ff385c;
   padding: 10px;
-  
 }
-.form-params {
+form > div{
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  width: 100%;
-  
-}
-.params{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
 
+}
 form label {
   font-weight: bold;
 }
@@ -124,24 +113,25 @@ form button {
   padding: 15px;
   width: 100%;
 }
+/* about */
 #about{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-div.about img{
-  display: flex;
-  align-items: center;
+#about img{
   width: 100%;
   margin-bottom: 10px;
 }
-
-#host{
+/* ideas */
+#ideas{
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-div img{
+#ideas img{
+  width: 100%;
+}
+#host img{
   width: 100%;
 }
 /* -------  Footer ------- */
@@ -155,7 +145,80 @@ footer p {
   text-align: center;
   padding: 20px;
 }
+@media all and (min-width: 480px){
+  header {
+    display: flex;
+    background-color: #ff385c;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo{
+    font-size: 36px;
+  }
+ nav a{
+    font-size: 14px;
+  }
+  /* ---form--- */
+  form{
+    display: flex;
+    font-size: 10px;
+    gap: 4px;
+  }
+  form > div{
+    flex-direction: column;
+    width: 18%;
+    justify-content: space-between;
+  }
+   form input{
+    width:80%;
+  }
+  form select{
+    width: 80%;
+  }
+  form button{
+    display: flex;
+    width: 20%;
+    font-size: 16px;
+    justify-content: center;
+  }
+  /* --about-- */
+  .inline{
+    display:flex;
 }
-
-
-/* -------  Media Query ------- */
+ #about img{
+  width: 25%;
+  margin-right: 10px;
+}
+/* ---ideas--- */
+.row{
+  display: flex;
+  gap: 10px;
+}
+.resize {
+  width: 50%;
+}
+/* host */
+#host{
+  display:flex;
+}
+#host div{
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+}
+@media all and (max-width:349px){
+  .logo{
+    font-size: 60px;
+  }
+}
+@media all and (min-width: 1000px){
+  .logo{
+    font-size: 72px;
+  }
+  nav{
+    font-size: 22px;
+  }
+}
